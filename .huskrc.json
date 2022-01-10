@@ -1,6 +1,8 @@
 {
+  "husky": {
     "hooks": {
-        "pre-commit": "lint-staged",
-        "pre-push": "npm run test:ci"
+      "pre-commit": "npm run prettier-format && npm run lint",
+      "pre-push": "npm run test:ci"
     }
+  }
 }
